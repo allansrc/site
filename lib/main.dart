@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Duckdev ATO Software',
       theme: MainTheme.theme,
-      home: const MyHomePage(title: '@allansrc'),
+      home: const MyHomePage(),
     );
   }
 }

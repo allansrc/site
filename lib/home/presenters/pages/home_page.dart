@@ -16,6 +16,7 @@ class MyHomePage extends StatelessWidget {
             Divider(),
             AboutSectionWidget(),
             Divider(),
+            ContentsSectionWidget(),
           ],
         ),
       ),

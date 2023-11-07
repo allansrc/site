@@ -33,6 +33,7 @@ class DescriptionWidget extends StatelessWidget {
           const SizedBox(height: 16),
           Wrap(
             spacing: 4.5,
+            runSpacing: 4.5,
             children: [
               Chip(
                 label: Text(

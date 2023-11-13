@@ -6,15 +6,29 @@
       "location": "Campo Mourão - PR",
       "inperson": true,
       "tags": ["fuchsia", "opensource", "dart", "flutter"]
+    },
+    {
+      "title": "BootCamp Flutter 23'",
+      "description": "Criando Seu App do Zero com Flutter Ed. 2",
+      "location": "João Pessoa - PB",
+      "inperson": true,
+      "tags": ["dart", "flutter", "first steps"]
+    },
+    {
+      "title": "BootCamp Dart",
+      "description": "Introdução ao Dart: Variáveis, Tipos, e lógica de programação",
+      "location": "João Pessoa - PB",
+      "inperson": false,
+      "tags": ["dart", "flutter"]
     }
   ],
   "events": [
     {
-      "title": "",
+      "title": "Flutter Brasil 2023",
       "description": "",
-      "location": "",
-      "inperson": false,
-      "tags": ["fuchsia", "opensource", "dart", "flutter"]
+      "location": "João Pessoa - PB",
+      "inperson": true,
+      "tags": [ "opensource",  "flutter", "mobile", "enterprise", "network"]
     }
   ]
 }

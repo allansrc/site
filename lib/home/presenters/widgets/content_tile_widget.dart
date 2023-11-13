@@ -24,14 +24,29 @@ class ContentTileWidget extends StatelessWidget {
       child: Container(
         constraints: const BoxConstraints(
           maxWidth: 500,
+          minHeight: 200,
         ),
         padding: const EdgeInsets.all(18.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              title,
-              style: TextStyle(color: AppColors.accent),
+            Row(
+              children: [
+                Text(
+                  title,
+                  style: TextStyle(color: AppColors.accent),
+                ),
+                const Spacer(),
+                Chip(
+                  label: Text(
+                    wasInPerson ? 'In Person' : 'Online',
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: AppColors.green,
+                    ),
+                  ),
+                ),
+              ],
             ),
             const Divider(),
             Text(
@@ -49,7 +64,7 @@ class ContentTileWidget extends StatelessWidget {
                 Icon(
                   Icons.pin_drop,
                   color: AppColors.green,
-                )
+                ),
               ],
             ),
             const SizedBox(height: 12),
@@ -57,15 +72,6 @@ class ContentTileWidget extends StatelessWidget {
               spacing: 4.5,
               runSpacing: 4.5,
               children: [
-                // Chip(
-                //   label: Text(
-                //     wasInPerson ? 'In Person' : 'Online',
-                //     style: TextStyle(
-                //       fontWeight: FontWeight.bold,
-                //       color: AppColors.green,
-                //     ),
-                //   ),
-                // ),
                 for (var tag in tagList) ...{
                   Chip(
                     label: Text(

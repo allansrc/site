@@ -67,26 +67,28 @@ class _ContentsSectionWidgetState extends State<ContentsSectionWidget> {
               ],
             ),
           ),
-          if (isTalkSelected || (!isTalkSelected && !isEventSelected))
-            for (var content in widget.contents.talks) ...{
-              ContentTileWidget(
-                title: content.title,
-                subTitle: content.description,
-                local: content.location,
-                wasInPerson: content.inPerson,
-                tagList: content.tags ?? [],
-              ),
-            },
-          if (isEventSelected || (!isTalkSelected && !isEventSelected))
-            for (var content in widget.contents.events) ...{
-              ContentTileWidget(
-                title: content.title,
-                subTitle: content.description,
-                local: content.location,
-                wasInPerson: content.inPerson,
-                tagList: content.tags ?? [],
-              ),
-            }
+          Wrap(children: [
+            if (isTalkSelected || (!isTalkSelected && !isEventSelected))
+              for (var content in widget.contents.talks) ...{
+                ContentTileWidget(
+                  title: content.title,
+                  subTitle: content.description,
+                  local: content.location,
+                  wasInPerson: content.inPerson,
+                  tagList: content.tags ?? [],
+                ),
+              },
+            if (isEventSelected || (!isTalkSelected && !isEventSelected))
+              for (var content in widget.contents.events) ...{
+                ContentTileWidget(
+                  title: content.title,
+                  subTitle: content.description,
+                  local: content.location,
+                  wasInPerson: content.inPerson,
+                  tagList: content.tags ?? [],
+                ),
+              },
+          ]),
         ],
       ),
     );

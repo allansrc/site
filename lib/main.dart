@@ -1,6 +1,8 @@
 import 'package:allansrc/shared/themes/main_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
+import 'home/presenters/controllers/home_controller.dart';
 import 'home/presenters/pages/home_page.dart';
 
 void main() {
@@ -12,10 +14,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Duckdev ATO Software',
-      theme: MainTheme.theme,
-      home: const MyHomePage(),
+    return ChangeNotifierProvider(
+      create: (context) {
+        return HomeController();
+      },
+      child: MaterialApp(
+        title: 'Duckdev ATO Software',
+        theme: MainTheme.theme,
+        home: const MyHomePage(),
+      ),
     );
   }
 }

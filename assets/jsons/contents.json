@@ -1,0 +1,20 @@
+{
+  "talks": [
+    {
+      "title": "Breve apresentação ao Fuchsia OS",
+      "description": "Introdução e possibilidades",
+      "location": "Campo Mourão - PR",
+      "inperson": true,
+      "tags": ["fuchsia", "opensource", "dart", "flutter"]
+    }
+  ],
+  "events": [
+    {
+      "title": "",
+      "description": "",
+      "location": "",
+      "inperson": false,
+      "tags": ["fuchsia", "opensource", "dart", "flutter"]
+    }
+  ]
+}

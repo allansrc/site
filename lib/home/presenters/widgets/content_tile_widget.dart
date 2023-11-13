@@ -57,19 +57,19 @@ class ContentTileWidget extends StatelessWidget {
               spacing: 4.5,
               runSpacing: 4.5,
               children: [
-                Chip(
-                  label: Text(
-                    wasInPerson ? 'In Person' : 'Online',
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: AppColors.green,
-                    ),
-                  ),
-                ),
+                // Chip(
+                //   label: Text(
+                //     wasInPerson ? 'In Person' : 'Online',
+                //     style: TextStyle(
+                //       fontWeight: FontWeight.bold,
+                //       color: AppColors.green,
+                //     ),
+                //   ),
+                // ),
                 for (var tag in tagList) ...{
                   Chip(
                     label: Text(
-                      tag,
+                      '#$tag',
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         color: AppColors.green,

@@ -12,6 +12,7 @@ dependencies:
 
   cupertino_icons: ^1.0.2
   google_fonts: ^6.1.0
+  provider: ^6.1.1
 
 dev_dependencies:
   flutter_test:
@@ -23,6 +24,7 @@ flutter:
 
   assets:
     - assets/icons/social/
+    - assets/jsons/
     # - images/a_dot_ham.jpeg
 
   # fonts:

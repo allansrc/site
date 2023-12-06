@@ -53,6 +53,114 @@
       "dateTime": "15/04/2023",
       "inperson": true,
       "tags": ["dart", "flutter"]
+    },
+    {
+      "title": "Bootcamp de Flutter: Desenvolvendo meu primeiro app do zero",
+      "description": "Iniciando sua jornada desenvolvendo seu primeiro app do zero",
+      "location": "João Pessoa - PB",
+      "host": "Inova feat. GDG João Pessoa",
+      "dateTime": "09/11/2022",
+      "inperson": true,
+      "tags": ["dart", "flutter"]
+    },
+    {
+      "title": "Desenvolvendo Packages para Flutter e Dart",
+      "description": "Desenvolvendo Super apps com Flutter",
+      "location": "João Pessoa - PB",
+      "host": "DevFlutter PB",
+      "dateTime": "15/08/2020",
+      "inperson": true,
+      "tags": ["dart", "flutter"]
+    },
+    {
+      "title": "Flutter Desktop: desafios e soluções",
+      "description": "Desenvolvendo apps para Linux com Flutter",
+      "location": "João Pessoa - PB",
+      "host": "DevFlutter PB",
+      "dateTime": "21/11/2020",
+      "inperson": true,
+      "tags": ["dart", "flutter"]
+    },
+    {
+      "title": "Flutter Desktop: desafios e soluções",
+      "description": "Desenvolvendo apps para Linux com Flutter",
+      "location": "João Pessoa - PB",
+      "host": "DevFlutter PB",
+      "dateTime": "21/11/2020",
+      "inperson": true,
+      "tags": ["dart", "flutter"]
+    },
+    {
+      "title": "Flutter e CI/CD para optimizar o delivery de seu app",
+      "description": "Nesse encontro demostraremos como integrar seu projeto flutter com CI/CD",
+      "location": "João Pessoa - PB",
+      "host": "DevFlutter PB",
+      "dateTime": "26/09/2020",
+      "inperson": true,
+      "tags": ["dart", "flutter"]
+    },
+    {
+      "title": "Flutter Web e Desktop",
+      "description": "Como expandir o nicho dos seus apps com Flutter",
+      "location": "João Pessoa - PB",
+      "host": "DevFlutter PB",
+      "dateTime": "19/08/2020",
+      "inperson": true,
+      "tags": ["dart", "flutter"]
+    },
+    {
+      "title": "Flutter Web e Desktop",
+      "description": "Como expandir o nicho dos seus apps com Flutter",
+      "location": "João Pessoa - PB",
+      "host": "DevFlutter PB",
+      "dateTime": "19/08/2020",
+      "inperson": true,
+      "tags": ["dart", "flutter"]
+    },
+    {
+      "title": "Smooth Developer",
+      "description": "Desenvolvendo Super apps com Flutter",
+      "location": "João Pessoa - PB",
+      "host": "DevFlutter PB",
+      "dateTime": "15/08/2020",
+      "inperson": true,
+      "tags": ["dart", "flutter"]
+    },
+    {
+      "title": "Desenvolvendo Packages para Flutter e Dart",
+      "description": "Veremos como desenvolver plugins e packages para Flutter e dart",
+      "location": "João Pessoa - PB",
+      "host": "DevFlutter PB",
+      "dateTime": "27/06/2020",
+      "inperson": true,
+      "tags": ["dart", "flutter", "opensource"]
+    },
+    {
+      "title": "Codelab:Flutter",
+      "description": "Workshop de desenvolvimento cross-paltform com Flutter",
+      "location": "João Pessoa - PB",
+      "host": "GRUDEPB-FEST",
+      "dateTime": "30/11/2019",
+      "inperson": true,
+      "tags": ["dart", "flutter"]
+    },
+    {
+      "title": "Turminha de Flutter",
+      "description": "Workshop de iniciação a programação com Dart e Flutter",
+      "location": "Guarabira - PB",
+      "host": "",
+      "dateTime": "25/10/2019",
+      "inperson": true,
+      "tags": ["dart", "flutter"]
+    },
+    {
+      "title": "Introdução ao Flutter",
+      "description": "Conhecendo o novo framework de desenvolvimento multi-plataforma do Google",
+      "location": "João Pessoa - PB",
+      "host": "Meetup GDG João Pessoa",
+      "dateTime": "21/09/2019",
+      "inperson": true,
+      "tags": ["dart", "flutter"]
     }
   ],
   "events": [
@@ -74,11 +182,27 @@
     },
     {
       "title": "Flutter Forward Extended Brasil",
-      "description": "O Flutter Brasil é um dos maiores eventos do framework do país, trazendo as últimas tendências da tecnologia para a comunidade. Este ano, o evento será realizado em 24 de Agosto, em João Pessoa, sendo a primeira vez presencial.",
+      "description": "Iremos discutir as novidades do evento Flutter Forward que ocorreu em Nairobi, Kenya.",
       "location": "Google Brasil, São Paulo - PB",
       "dateTime": "15/03/2023",
       "inperson": true,
       "tags": [ "opensource",  "flutter", "mobile", "enterprise", "network"]
+    }, 
+    {
+      "title": "Flutter Forward - Rebrodcast",
+      "description": "Livestream do Flutter Forward. Evento no qual serão anunciados as principais novidades e investimentos realizados no framework Flutter.",
+      "location": "Google Brasil, São Paulo - PB",
+      "dateTime": "25/01/2023",
+      "inperson": true,
+      "tags": [ "opensource",  "flutter", "mobile", "enterprise", "network"]
+    },
+    {
+      "title": "Flutter Brasil Conf 2022",
+      "description": "O maior evento de Flutter do BRASIL está de volta!\nOrganizado pela Flutterando em parceria com o nosso querido GDG João Pessoa, o GDG Curitiba, GDG Parnaíba, GDG Maringá e GDG Belo Horizonte.",
+      "location": "Flutterando, YouTube",
+      "dateTime": "06/10/2022",
+      "inperson": false,
+      "tags": [ "flutter","mobile",  "network"]
     }
   ]
 }

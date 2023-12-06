@@ -1,5 +1,6 @@
 import 'package:allansrc/shared/themes/colors.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class AvatarWidget extends StatelessWidget {
   const AvatarWidget({super.key});
@@ -38,7 +39,15 @@ class AvatarWidget extends StatelessWidget {
                       Radius.circular(12),
                     ),
                   ),
-                  child: Image.asset('assets/icons/social/linkedin.png'),
+                  child: SvgPicture.asset(
+                    'icons/social/svgs/linkedin.svg',
+                    colorFilter: const ColorFilter.mode(
+                      Colors.red,
+                      BlendMode.srcIn,
+                    ),
+                    semanticsLabel: 'linkedin logo',
+                  ),
+                  // Image.asset('assets/icons/social/linkedin.png'),
                 ),
                 Container(
                   height: 44,

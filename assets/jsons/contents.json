@@ -1,9 +1,20 @@
 {
   "talks": [
     {
+      "title": "Flutter em apps Nativos",
+      "description": "Como NÃO criar o monstro perfeito",
+      "location": "João Pessoa - PB",
+      "host": "DevFest Nordeste 2023",
+      "dateTime": "02/12/2023",
+      "inperson": true,
+      "tags": ["flutter", "add-to-app", "native", "architecture"]
+    },
+    {
       "title": "Breve apresentação ao Fuchsia OS",
       "description": "Introdução e possibilidades",
       "location": "Campo Mourão - PR",
+      "host": "Tech Conecta",
+      "dateTime": "28/10/2023",
       "inperson": true,
       "tags": ["fuchsia", "opensource", "dart", "flutter"]
     },
@@ -11,22 +22,61 @@
       "title": "BootCamp Flutter 23'",
       "description": "Criando Seu App do Zero com Flutter Ed. 2",
       "location": "João Pessoa - PB",
+      "host": "Inova feat. GDG João Pessoa",
+      "dateTime": "19/10/2023",
       "inperson": true,
       "tags": ["dart", "flutter", "first steps"]
     },
     {
-      "title": "BootCamp Dart",
+      "title": "Caminhos para ultilização do Flutter no Serasa",
+      "description": "Migração de tecnologia para Flutter, Arquitetura em microapps, method channel, e contar a história de como foi trocar a roda de um avião com 80MM de usuários enquanto esse avião estava voando",
+      "location": "João Pessoa - PB",
+      "host": "Flutter Brasil 2023",
+      "dateTime": "24/08/2023",
+      "inperson": true,
+      "tags": ["devtools", "flutter", "native integration", "architecture"]
+    },
+    {
+      "title": "Dart: primeiros passos",
       "description": "Introdução ao Dart: Variáveis, Tipos, e lógica de programação",
       "location": "João Pessoa - PB",
+      "host": "Meetup GDG João Pessoa",
+      "dateTime": "25/07/2023",
       "inperson": false,
+      "tags": ["dart", "flutter"]
+    },
+    {
+      "title": "Flutter DevCamp",
+      "description": "Iniciando nossa jornada desenvolvendo apps com Flutter",
+      "location": "João Pessoa - PB",
+      "host": "Meetup GDG João Pessoa",
+      "dateTime": "15/04/2023",
+      "inperson": true,
       "tags": ["dart", "flutter"]
     }
   ],
   "events": [
     {
-      "title": "Flutter Brasil 2023",
-      "description": "",
+      "title": "DevFest Nordeste 2023",
+      "description": "DevFests são eventos de tecnologia organizados anualmente por comunidades de desenvolvedores, os Google Developer Groups (GDGs), no mundo inteiro.\n\nNos últimos anos, as comunidades dos Estados do Nordeste resolveram se unir para realizar o DevFest Nordeste, dando destaque aos talentos locais e também promovendo a troca de conhecimentos entre os participantes.",
       "location": "João Pessoa - PB",
+      "dateTime": "02/12/2023",
+      "inperson": true,
+      "tags": [ "opensource",  "flutter", "mobile", "android", "GDG", "WTM"]
+    },
+    {
+      "title": "Flutter Brasil 2023",
+      "description": "O Flutter Brasil é um dos maiores eventos do framework do país, trazendo as últimas tendências da tecnologia para a comunidade. Este ano, o evento será realizado em 24 de Agosto, em João Pessoa, sendo a primeira vez presencial.",
+      "location": "João Pessoa - PB",
+      "dateTime": "24/08/2023",
+      "inperson": true,
+      "tags": [ "opensource",  "flutter", "mobile", "enterprise", "network"]
+    },
+    {
+      "title": "Flutter Forward Extended Brasil",
+      "description": "O Flutter Brasil é um dos maiores eventos do framework do país, trazendo as últimas tendências da tecnologia para a comunidade. Este ano, o evento será realizado em 24 de Agosto, em João Pessoa, sendo a primeira vez presencial.",
+      "location": "Google Brasil, São Paulo - PB",
+      "dateTime": "15/03/2023",
       "inperson": true,
       "tags": [ "opensource",  "flutter", "mobile", "enterprise", "network"]
     }

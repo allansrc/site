@@ -107,6 +107,10 @@
         {
           "label": "event",
           "href": "https://gdg.community.dev/events/details/google-gdg-joao-pessoa-presents-dart-primeiros-passos/"
+        },
+        {
+          "label": "call",
+          "href": "https://www.instagram.com/p/CvFuO5Gpht_/"
         }
       ]
     },
@@ -165,6 +169,177 @@
       ]
     },
     {
+      "title": "Flutter: da base ao app",
+      "description": "Meetup de contextualização dasnovidades e principais features do Flutter e desenvolvimento de um app",
+      "location": "GDG João Pessoa, YouTube",
+      "host": "Meetup GDG João Pessoa",
+      "dateTime": "19/04/2022",
+      "inperson": false,
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "call",
+          "href": "https://www.instagram.com/p/CceL7cjPnSR/"
+        }
+      ]
+    },
+    {
+      "title": "Fuchsia: Modules, System and Apps",
+      "description": "Introdução ao novo sistema operacional da Google, e como desenvolver apps Flutter nele",
+      "location": "Flutterando, YouTube",
+      "host": "Flutter Festival - Brasil",
+      "dateTime": "10/03/2022",
+      "inperson": false,
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "talk",
+          "href": "https://www.youtube.com/live/IHmwvi6v7fs?si=Yb06DoYNl_mroxEy&t=7848"
+        },
+        {
+          "label": "event",
+          "href": "https://www.youtube.com/watch?v=IHmwvi6v7fs"
+        }
+      ]
+    },
+    {
+      "title": "Flutter: Navigator 2.0",
+      "description": "Novidades e funcionalidades do Navigator 2.0 no Flutter",
+      "location": "TDC, Remote",
+      "host": "The Developer Conference",
+      "dateTime": "01/12/2021",
+      "inperson": false,
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label":"event",
+          "href": "https://thedevconf.com/tdc/2021/future/trilha-flutter"
+        }
+        
+      ]
+    },
+    {
+      "title": "Flutter com Rust: A mistura perfeita usando Dart FFI",
+      "description": "O que é o dart:ffi e como dar um bost em inmplementaçõers nativas usando flutter, dart e rust",
+      "location": "GDG Brasil, YouTube",
+      "host": "DevFest Brasil",
+      "dateTime": "01/12/2021",
+      "inperson": false,
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "talk",
+          "href": "https://www.youtube.com/live/oePVTDf0zg0?si=9-d7Lgjk-XAYl_cO&t=12797"
+        }
+        
+      ]
+    },
+    {
+      "title": "Customizando Layouts e Desennhando com Flutter usando CustomPaint",
+      "description": "Nessa Talk vamos aprender mais como funciona o customPaint e a customizar nossos layouts, widgets e a desenhar com Flutter",
+      "location": "Flutterando, YouTube",
+      "host": "Flutter Piauí",
+      "dateTime": "27/07/2021",
+      "inperson": false,
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {"label": "talk", "href": "https://www.youtube.com/watch?v=ON4lk8B-Hck"}
+        
+      ]
+    },
+    {
+      "title": "Dart FFI: Writing cross-platform native calls with Rust",
+      "description": "Allan Ramos — Flutter mobile developer at F-team. He will present Senior Track and share his topic: Dart FFI: Writing cross-platform native calls with Rust. And at the end, there will be a QA session.",
+      "location": "Geekle, Remote",
+      "host": "Flutter Global Summit 21'",
+      "dateTime": "27/07/2021",
+      "inperson": false,
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "call",
+          "href": "https://www.instagram.com/p/CRElDrfj9Wf/"
+        }
+      ]
+    },
+    {
+      "title": "Implementando chamadas nativas em aplicações Flutter usando Rust",
+      "description": "Nessa palestra vamos aprender como realizar chamadas nativas usando Dart:FFI e como podemos implementar Código lowlevel com Rust em aplicações Flutter/Dart",
+      "location": "TDC, YouTube",
+      "host": "The Developer Conference",
+      "dateTime": "09/06/2021",
+      "inperson": false,
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "event",
+          "href": "https://thedevconf.com/tdc/2021/connections/trilha-flutter"
+        }
+      ]
+    },
+    {
+      "title": "Introdução ao Flutter: desenvolvimento multi-plataforma",
+      "description": "Primeiro evento de 2021 do GDG Americana, traremos um convidado de João Pessoa - PB. Vamos conversar sobre Flutter e Dart para o desenvolvimento de apps mobile multiplataforma.",
+      "location": "GDG, Benvy",
+      "host": "GDG Americana",
+      "dateTime": "20/01/2021",
+      "inperson": false,
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "event",
+          "href": "https://gdg.community.dev/events/details/google-gdg-americana-presents-tech-talk-1/"
+        },
+        {
+          "label": "talk",
+          "href": "https://www.youtube.com/watch?v=4BOiNM6kfY8&t=3s"
+        }
+      ]
+    },
+    {
+      "title": "Conhecendo (um pouco) o Fuchsia OS",
+      "description": "A google está trabalhando em um novo Sistema operacional, e nessa palestra vamos conhecer um pouco mais sobre esse sistema e como podemos nos preparar como devs para ele.",
+      "location": "Flutterando, YouTube",
+      "host": "Flutterando",
+      "dateTime": "14/01/2021",
+      "inperson": false,
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        
+        {
+          "label": "talk",
+          "href": "https://www.youtube.com/watch?v=yvibcRdMY3c"
+        }
+      ]
+    },
+    {
       "title": "Desenvolvendo Packages para Flutter e Dart",
       "description": "Desenvolvendo Super apps com Flutter",
       "location": "João Pessoa - PB",
@@ -176,10 +351,7 @@
         "flutter"
       ],
       "links": [
-        {
-          "label": "",
-          "href": ""
-        }
+       
       ]
     },
     {
@@ -194,28 +366,7 @@
         "flutter"
       ],
       "links": [
-        {
-          "label": "",
-          "href": ""
-        }
-      ]
-    },
-    {
-      "title": "Flutter Desktop: desafios e soluções",
-      "description": "Desenvolvendo apps para Linux com Flutter",
-      "location": "João Pessoa - PB",
-      "host": "DevFlutter PB",
-      "dateTime": "21/11/2020",
-      "inperson": true,
-      "tags": [
-        "dart",
-        "flutter"
-      ],
-      "links": [
-        {
-          "label": "",
-          "href": ""
-        }
+    
       ]
     },
     {
@@ -230,10 +381,7 @@
         "flutter"
       ],
       "links": [
-        {
-          "label": "",
-          "href": ""
-        }
+       
       ]
     },
     {
@@ -248,10 +396,7 @@
         "flutter"
       ],
       "links": [
-        {
-          "label": "",
-          "href": ""
-        }
+       
       ]
     },
     {
@@ -266,10 +411,7 @@
         "flutter"
       ],
       "links": [
-        {
-          "label": "",
-          "href": ""
-        }
+       
       ]
     },
     {
@@ -284,10 +426,7 @@
         "flutter"
       ],
       "links": [
-        {
-          "label": "",
-          "href": ""
-        }
+       
       ]
     },
     {
@@ -303,10 +442,7 @@
         "opensource"
       ],
       "links": [
-        {
-          "label": "",
-          "href": ""
-        }
+       
       ]
     },
     {
@@ -322,8 +458,16 @@
       ],
       "links": [
         {
-          "label": "",
-          "href": ""
+          "label": "event",
+          "href": "https://gdg.community.dev/events/details/google-gdg-joao-pessoa-presents-grudefestpb-gdg-joao-pessoa-evento-pago/"
+        },
+        {
+          "label": "event",
+          "href": "https://www.sympla.com.br/evento/grudepb-fest/712425"
+        },
+        {
+          "label": "call",
+          "href": "https://www.instagram.com/p/B4xBnBznKH6/"
         }
       ]
     },
@@ -358,8 +502,12 @@
       ],
       "links": [
         {
-          "label": "",
-          "href": ""
+          "label": "event",
+          "href": "https://gdg.community.dev/events/details/google-gdg-joao-pessoa-presents-encontro-gdg-joao-pessoa-setembro19/"
+        },
+        {
+          "label": "call",
+          "href": "https://www.instagram.com/p/B2oeOwIpmZ2/"
         }
       ]
     }
@@ -410,10 +558,7 @@
         "Networking"
       ],
       "links": [
-        {
-          "label": "",
-          "href": ""
-        }
+       
       ]
     },
     {
@@ -437,6 +582,26 @@
         {
           "label": "youtube",
           "href": "https://www.youtube.com/watch?v=SKG3-h3K9k8"
+        }
+      ]
+    },
+    {
+      "title": "Flutter Global Summit 23'",
+      "description": "Online Summit for Flutter Developers",
+      "location": "Geekle, Remote - Global",
+      "dateTime": "07/02/2023",
+      "inperson": true,
+      "tags": [
+        "opensource",
+        "flutter",
+        "mobile",
+        "enterprise",
+        "network"
+      ],
+      "links": [
+        {
+          "label": "event",
+          "href": "https://geekle.us/stage_/flutter23"
         }
       ]
     },

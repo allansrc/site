@@ -7,7 +7,18 @@
       "host": "DevFest Nordeste 2023",
       "dateTime": "02/12/2023",
       "inperson": true,
-      "tags": ["flutter", "add-to-app", "native", "architecture"]
+      "tags": [
+        "flutter",
+        "add-to-app",
+        "native",
+        "architecture"
+      ],
+      "links": [
+        {
+          "label": "event",
+          "href": "https://gdg.community.dev/events/details/google-gdg-joao-pessoa-presents-devfest-nordeste-2023/"
+        }
+      ]
     },
     {
       "title": "Breve apresentação ao Fuchsia OS",
@@ -16,7 +27,22 @@
       "host": "Tech Conecta",
       "dateTime": "28/10/2023",
       "inperson": true,
-      "tags": ["fuchsia", "opensource", "dart", "flutter"]
+      "tags": [
+        "fuchsia",
+        "opensource",
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "event",
+          "href": "https://www.sympla.com.br/evento/tech-conecta/2175405"
+        },
+        {
+          "label": "event",
+          "href": "https://gdg.community.dev/events/details/google-gdg-maringa-presents-tech-conecta-campo-mourao/"
+        }
+      ]
     },
     {
       "title": "BootCamp Flutter 23'",
@@ -25,7 +51,22 @@
       "host": "Inova feat. GDG João Pessoa",
       "dateTime": "19/10/2023",
       "inperson": true,
-      "tags": ["dart", "flutter", "first steps"]
+      "tags": [
+        "dart",
+        "flutter",
+        "android",
+        "iOS"
+      ],
+      "links": [
+        {
+          "label": "event",
+          "href": "https://gdg.community.dev/events/details/google-gdg-joao-pessoa-presents-bootcamp-de-flutter-desenvolvendo-meu-primeiro-app-do-zero-23/"
+        },
+        {
+          "label": "event",
+          "href": "https://www.even3.com.br/inovauniesp23/"
+        }
+      ]
     },
     {
       "title": "Caminhos para ultilização do Flutter no Serasa",
@@ -34,7 +75,22 @@
       "host": "Flutter Brasil 2023",
       "dateTime": "24/08/2023",
       "inperson": true,
-      "tags": ["devtools", "flutter", "native integration", "architecture"]
+      "tags": [
+        "devtools",
+        "flutter",
+        "native integration",
+        "architecture"
+      ],
+      "links": [
+        {
+          "label": "event",
+          "href": "https://gdg.community.dev/events/details/google-gdg-joao-pessoa-presents-flutter-brasil-2023/"
+        },
+        {
+          "label": "event",
+          "href": "https://www.sympla.com.br/evento/flutter-brasil-2023/2072508"
+        }
+      ]
     },
     {
       "title": "Dart: primeiros passos",
@@ -43,7 +99,16 @@
       "host": "Meetup GDG João Pessoa",
       "dateTime": "25/07/2023",
       "inperson": false,
-      "tags": ["dart", "flutter"]
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "event",
+          "href": "https://gdg.community.dev/events/details/google-gdg-joao-pessoa-presents-dart-primeiros-passos/"
+        }
+      ]
     },
     {
       "title": "Flutter DevCamp",
@@ -52,7 +117,34 @@
       "host": "Meetup GDG João Pessoa",
       "dateTime": "15/04/2023",
       "inperson": true,
-      "tags": ["dart", "flutter"]
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "event",
+          "href": "https://gdg.community.dev/events/details/google-gdg-joao-pessoa-presents-flutter-meetup-1/"
+        }
+      ]
+    },
+    {
+      "title": "Flutter Forward",
+      "description": "Livestream do Flutter Forward. Evento no qual serão anunciados as principais novidades e investimentos realizados no framework Flutter.",
+      "location": "João Pessoa - PB",
+      "host": "Meetup GDG João Pessoa",
+      "dateTime": "25/01/2023",
+      "inperson": true,
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "event",
+          "href": "https://gdg.community.dev/events/details/google-gdg-joao-pessoa-presents-flutter-forward/"
+        }
+      ]
     },
     {
       "title": "Bootcamp de Flutter: Desenvolvendo meu primeiro app do zero",
@@ -61,7 +153,16 @@
       "host": "Inova feat. GDG João Pessoa",
       "dateTime": "09/11/2022",
       "inperson": true,
-      "tags": ["dart", "flutter"]
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "event",
+          "href": "https://gdg.community.dev/events/details/google-gdg-joao-pessoa-presents-bootcamp-de-flutter-desenvolvendo-meu-primeiro-app-do-zero/"
+        }
+      ]
     },
     {
       "title": "Desenvolvendo Packages para Flutter e Dart",
@@ -70,7 +171,16 @@
       "host": "DevFlutter PB",
       "dateTime": "15/08/2020",
       "inperson": true,
-      "tags": ["dart", "flutter"]
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "",
+          "href": ""
+        }
+      ]
     },
     {
       "title": "Flutter Desktop: desafios e soluções",
@@ -79,7 +189,16 @@
       "host": "DevFlutter PB",
       "dateTime": "21/11/2020",
       "inperson": true,
-      "tags": ["dart", "flutter"]
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "",
+          "href": ""
+        }
+      ]
     },
     {
       "title": "Flutter Desktop: desafios e soluções",
@@ -88,7 +207,16 @@
       "host": "DevFlutter PB",
       "dateTime": "21/11/2020",
       "inperson": true,
-      "tags": ["dart", "flutter"]
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "",
+          "href": ""
+        }
+      ]
     },
     {
       "title": "Flutter e CI/CD para optimizar o delivery de seu app",
@@ -97,7 +225,16 @@
       "host": "DevFlutter PB",
       "dateTime": "26/09/2020",
       "inperson": true,
-      "tags": ["dart", "flutter"]
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "",
+          "href": ""
+        }
+      ]
     },
     {
       "title": "Flutter Web e Desktop",
@@ -106,7 +243,16 @@
       "host": "DevFlutter PB",
       "dateTime": "19/08/2020",
       "inperson": true,
-      "tags": ["dart", "flutter"]
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "",
+          "href": ""
+        }
+      ]
     },
     {
       "title": "Flutter Web e Desktop",
@@ -115,7 +261,16 @@
       "host": "DevFlutter PB",
       "dateTime": "19/08/2020",
       "inperson": true,
-      "tags": ["dart", "flutter"]
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "",
+          "href": ""
+        }
+      ]
     },
     {
       "title": "Smooth Developer",
@@ -124,7 +279,16 @@
       "host": "DevFlutter PB",
       "dateTime": "15/08/2020",
       "inperson": true,
-      "tags": ["dart", "flutter"]
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "",
+          "href": ""
+        }
+      ]
     },
     {
       "title": "Desenvolvendo Packages para Flutter e Dart",
@@ -133,7 +297,17 @@
       "host": "DevFlutter PB",
       "dateTime": "27/06/2020",
       "inperson": true,
-      "tags": ["dart", "flutter", "opensource"]
+      "tags": [
+        "dart",
+        "flutter",
+        "opensource"
+      ],
+      "links": [
+        {
+          "label": "",
+          "href": ""
+        }
+      ]
     },
     {
       "title": "Codelab:Flutter",
@@ -142,7 +316,16 @@
       "host": "GRUDEPB-FEST",
       "dateTime": "30/11/2019",
       "inperson": true,
-      "tags": ["dart", "flutter"]
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "",
+          "href": ""
+        }
+      ]
     },
     {
       "title": "Turminha de Flutter",
@@ -151,7 +334,16 @@
       "host": "",
       "dateTime": "25/10/2019",
       "inperson": true,
-      "tags": ["dart", "flutter"]
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "",
+          "href": ""
+        }
+      ]
     },
     {
       "title": "Introdução ao Flutter",
@@ -160,7 +352,16 @@
       "host": "Meetup GDG João Pessoa",
       "dateTime": "21/09/2019",
       "inperson": true,
-      "tags": ["dart", "flutter"]
+      "tags": [
+        "dart",
+        "flutter"
+      ],
+      "links": [
+        {
+          "label": "",
+          "href": ""
+        }
+      ]
     }
   ],
   "events": [
@@ -170,7 +371,27 @@
       "location": "João Pessoa - PB",
       "dateTime": "02/12/2023",
       "inperson": true,
-      "tags": [ "opensource",  "flutter", "mobile", "android", "GDG", "WTM"]
+      "tags": [
+        "AI",
+        "Accessibility",
+        "Android",
+        "Career Development",
+        "Cloud",
+        "Data",
+        "DevFest",
+        "DevOps",
+        "Machine Learning",
+        "Mobile",
+        "Networking",
+        "Web",
+        "Women Techmakers"
+      ],
+      "links": [
+        {
+          "label": "",
+          "href": ""
+        }
+      ]
     },
     {
       "title": "Flutter Brasil 2023",
@@ -178,7 +399,22 @@
       "location": "João Pessoa - PB",
       "dateTime": "24/08/2023",
       "inperson": true,
-      "tags": [ "opensource",  "flutter", "mobile", "enterprise", "network"]
+      "tags": [
+        "Accessibility",
+        "Android",
+        "Career Development",
+        "Enterprise/Business Solutions",
+        "Firebase",
+        "Flutter",
+        "Mobile",
+        "Networking"
+      ],
+      "links": [
+        {
+          "label": "",
+          "href": ""
+        }
+      ]
     },
     {
       "title": "Flutter Forward Extended Brasil",
@@ -186,15 +422,68 @@
       "location": "Google Brasil, São Paulo - PB",
       "dateTime": "15/03/2023",
       "inperson": true,
-      "tags": [ "opensource",  "flutter", "mobile", "enterprise", "network"]
-    }, 
+      "tags": [
+        "opensource",
+        "flutter",
+        "mobile",
+        "enterprise",
+        "network"
+      ],
+      "links": [
+        {
+          "label": "event",
+          "href": "https://gdg.community.dev/events/details/google-gdg-joao-pessoa-presents-flutter-forward-extended-brasil/"
+        },
+        {
+          "label": "youtube",
+          "href": "https://www.youtube.com/watch?v=SKG3-h3K9k8"
+        }
+      ]
+    },
     {
       "title": "Flutter Forward - Rebrodcast",
       "description": "Livestream do Flutter Forward. Evento no qual serão anunciados as principais novidades e investimentos realizados no framework Flutter.",
       "location": "Google Brasil, São Paulo - PB",
       "dateTime": "25/01/2023",
       "inperson": true,
-      "tags": [ "opensource",  "flutter", "mobile", "enterprise", "network"]
+      "tags": [
+        "opensource",
+        "flutter",
+        "mobile",
+        "enterprise",
+        "network"
+      ],
+      "links": [
+        {
+          "label": "event",
+          "href": "https://gdg.community.dev/events/details/google-gdg-joao-pessoa-presents-flutter-forward/"
+        }
+      ]
+    },
+    {
+      "title": "DevFest Nordeste 2022",
+      "description": "A conferência é preparada para profissionais, pessoas desenvolvedoras e demais com interesse em aprendizado, ambiente de troca de experiências e networkin",
+      "location": "GDG, Fortaleza - CE",
+      "dateTime": "02/12/2022",
+      "inperson": true,
+      "tags": [
+        "Accessibility",
+        "Android",
+        "Cloud",
+        "DevFest",
+        "Firebase",
+        "Flutter",
+        "Mobile",
+        "Networking",
+        "Web",
+        "Women Techmakers"
+      ],
+      "links": [
+        {
+          "label": "event",
+          "href": "https://gdg.community.dev/events/details/google-gdg-joao-pessoa-presents-devfest-nordeste-2022/"
+        }
+      ]
     },
     {
       "title": "Flutter Brasil Conf 2022",
@@ -202,7 +491,17 @@
       "location": "Flutterando, YouTube",
       "dateTime": "06/10/2022",
       "inperson": false,
-      "tags": [ "flutter","mobile",  "network"]
+      "tags": [
+        "flutter",
+        "mobile",
+        "network"
+      ],
+      "links": [
+        {
+          "label": "event",
+          "href": "https://gdg.community.dev/events/details/google-gdg-joao-pessoa-presents-flutter-brasil-conf-2022/"
+        }
+      ]
     }
   ]
 }

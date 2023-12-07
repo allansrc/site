@@ -37,67 +37,72 @@ class _ContentTileWidgetState extends State<ContentTileWidget> {
             maxWidth: 500,
             minHeight: 250,
           ),
-          padding: const EdgeInsets.all(18.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
+          child: ListTile(
+            onTap: () {},
+            title: Padding(
+              padding: const EdgeInsets.all(18.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Expanded(
-                    child: Text(
-                      widget.title,
-                      style: TextStyle(color: AppColors.accent),
-                    ),
-                  ),
-                  Chip(
-                    label: Text(
-                      widget.wasInPerson ? 'In Person' : 'Online',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        color: AppColors.green,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              const Divider(),
-              Text(
-                _subtitleHandle(widget.subTitle, isHovered),
-                style: TextStyle(color: AppColors.white),
-              ),
-              const SizedBox(height: 12),
-              Row(
-                children: [
-                  Text(
-                    widget.local,
-                    style: TextStyle(color: AppColors.green),
-                  ),
-                  const SizedBox(width: 12),
-                  Icon(
-                    Icons.pin_drop,
-                    color: AppColors.green,
-                  ),
-                ],
-              ),
-              const SizedBox(height: 12),
-              Wrap(
-                spacing: 4.5,
-                runSpacing: 4.5,
-                children: [
-                  for (var tag in widget.tagList) ...{
-                    Chip(
-                      label: Text(
-                        '#$tag',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: AppColors.green,
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          widget.title,
+                          style: TextStyle(color: AppColors.accent),
                         ),
                       ),
-                    ),
-                  }
+                      Chip(
+                        label: Text(
+                          widget.wasInPerson ? 'In Person' : 'Online',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: AppColors.green,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  const Divider(),
+                  Text(
+                    _subtitleHandle(widget.subTitle, isHovered),
+                    style: TextStyle(color: AppColors.white),
+                  ),
+                  const SizedBox(height: 12),
+                  Row(
+                    children: [
+                      Text(
+                        widget.local,
+                        style: TextStyle(color: AppColors.green),
+                      ),
+                      const SizedBox(width: 12),
+                      Icon(
+                        Icons.pin_drop,
+                        color: AppColors.green,
+                      ),
+                    ],
+                  ),
+                  const SizedBox(height: 12),
+                  Wrap(
+                    spacing: 4.5,
+                    runSpacing: 4.5,
+                    children: [
+                      for (var tag in widget.tagList) ...{
+                        Chip(
+                          label: Text(
+                            '#$tag',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: AppColors.green,
+                            ),
+                          ),
+                        ),
+                      }
+                    ],
+                  )
                 ],
-              )
-            ],
+              ),
+            ),
           ),
         ),
       ),

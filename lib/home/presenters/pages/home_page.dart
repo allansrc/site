@@ -15,16 +15,14 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    Provider.of<HomeController>(context, listen: false).readContents();
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
+      Provider.of<HomeController>(context, listen: false).readContents();
+    });
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      floatingActionButton: FloatingActionButton(
-        onPressed: () =>
-            Provider.of<HomeController>(context, listen: false).readContents(),
-      ),
       body: Consumer<HomeController>(
         builder: (context, homeController, _) => Scaffold(
           body: Center(

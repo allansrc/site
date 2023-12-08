@@ -28,59 +28,83 @@ class AvatarWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Wrap(
-              spacing: 4.5,
+              spacing: 5,
+              runSpacing: 5,
               children: [
-                Container(
-                  height: 44,
-                  width: 44,
-                  decoration: BoxDecoration(
-                    color: AppColors.white,
-                    borderRadius: const BorderRadius.all(
-                      Radius.circular(12),
+                InkWell(
+                  onTap: () {},
+                  child: SizedBox(
+                    height: 44,
+                    width: 44,
+                    child: SvgPicture.asset(
+                      'icons/social/svgs/linkedin.svg',
+                      colorFilter: ColorFilter.mode(
+                        AppColors.white,
+                        BlendMode.srcIn,
+                      ),
+                      semanticsLabel: 'linkedin logo',
                     ),
                   ),
-                  child: SvgPicture.asset(
-                    'icons/social/svgs/linkedin.svg',
-                    colorFilter: const ColorFilter.mode(
-                      Colors.red,
-                      BlendMode.srcIn,
-                    ),
-                    semanticsLabel: 'linkedin logo',
-                  ),
-                  // Image.asset('assets/icons/social/linkedin.png'),
                 ),
-                Container(
-                  height: 44,
-                  width: 44,
-                  decoration: BoxDecoration(
-                    color: AppColors.white,
-                    borderRadius: const BorderRadius.all(
-                      Radius.circular(12),
+                InkWell(
+                  onTap: () {},
+                  child: SizedBox(
+                    height: 44,
+                    width: 44,
+                    child: SvgPicture.asset(
+                      'icons/social/svgs/medium.svg',
+                      colorFilter: ColorFilter.mode(
+                        AppColors.white,
+                        BlendMode.srcIn,
+                      ),
+                      semanticsLabel: 'medium logo',
                     ),
                   ),
-                  child: Image.asset('assets/icons/social/medium.png'),
                 ),
-                Container(
-                  height: 44,
-                  width: 44,
-                  decoration: BoxDecoration(
-                    color: AppColors.white,
-                    borderRadius: const BorderRadius.all(
-                      Radius.circular(12),
+                InkWell(
+                  onTap: () {},
+                  child: SizedBox(
+                    height: 44,
+                    width: 44,
+                    child: SvgPicture.asset(
+                      'icons/social/svgs/meetup.svg',
+                      colorFilter: ColorFilter.mode(
+                        AppColors.white,
+                        BlendMode.srcIn,
+                      ),
+                      semanticsLabel: 'meetup logo',
                     ),
                   ),
-                  child: Image.asset('assets/icons/social/twitter.png'),
                 ),
-                Container(
-                  height: 44,
-                  width: 44,
-                  decoration: BoxDecoration(
-                    color: AppColors.white,
-                    borderRadius: const BorderRadius.all(
-                      Radius.circular(12),
+                InkWell(
+                  onTap: () {},
+                  child: SizedBox(
+                    height: 44,
+                    width: 44,
+                    child: SvgPicture.asset(
+                      'icons/social/svgs/x.svg',
+                      colorFilter: ColorFilter.mode(
+                        AppColors.white,
+                        BlendMode.srcIn,
+                      ),
+                      semanticsLabel: 'x logo',
                     ),
                   ),
-                  child: Image.asset('assets/icons/social/youtube.png'),
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: SizedBox(
+                    height: 44,
+                    width: 44,
+                    child: SvgPicture.asset(
+                      'icons/social/svgs/youtube.svg',
+                      colorFilter: ColorFilter.mode(
+                        AppColors.white,
+                        BlendMode.srcIn,
+                      ),
+                      semanticsLabel: 'x logo',
+                    ),
+                  ),
                 ),
               ],
             )

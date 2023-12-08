@@ -40,7 +40,7 @@ class _ContentTileWidgetState extends State<ContentTileWidget> {
           child: ListTile(
             onTap: () {},
             title: Padding(
-              padding: const EdgeInsets.all(18.0),
+              padding: const EdgeInsets.symmetric(vertical: 8.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [

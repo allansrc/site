@@ -9,9 +9,6 @@ class HomeController extends ChangeNotifier {
   var contentValue = ContentModel.empty();
 
   void readContents() {
-    // final result = await rootBundle.loadString('jsons/contents.json');
-    // final contents = ContentModel.fromJson(jsonDecode(result));
-
     const result = ContentData.contents;
 
     final contents = ContentModel.fromJson(result);
@@ -23,12 +20,6 @@ class HomeController extends ChangeNotifier {
       eventsList.add(events);
     }
     contentValue = contents;
-
-    // final parsedValues = jsonDecode(result);
-
-    // for (var jsonContent in (parsedValues['events'] as List)) {
-    //   eventsList.add(ContentModel.fromJson(jsonContent));
-    // }
 
     notifyListeners();
   }

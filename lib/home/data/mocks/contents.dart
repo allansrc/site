@@ -490,7 +490,7 @@ class ContentData {
         "description": "Online Summit for Flutter Developers",
         "location": "Geekle, Remote - Global",
         "dateTime": "07/02/2023",
-        "inperson": true,
+        "inperson": false,
         "tags": ["opensource", "flutter", "mobile", "enterprise", "network"],
         "links": [
           {"label": "event", "href": "https://geekle.us/stage_/flutter23"}
@@ -502,7 +502,7 @@ class ContentData {
             "Livestream do Flutter Forward. Evento no qual serão anunciados as principais novidades e investimentos realizados no framework Flutter.",
         "location": "Google Brasil, São Paulo - PB",
         "dateTime": "25/01/2023",
-        "inperson": true,
+        "inperson": false,
         "tags": ["opensource", "flutter", "mobile", "enterprise", "network"],
         "links": [
           {

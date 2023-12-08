@@ -49,7 +49,7 @@ class EventContentModel {
       tags: json['tags'] != null
           ? (json['tags'] as List).map((e) => e.toString()).toList()
           : null,
-      inPerson: false,
+      inPerson: json['inperson'],
     );
   }
 }

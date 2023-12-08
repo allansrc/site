@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../../../shared/themes/colors.dart';
 import '../../../data/models/content_model.dart';
+import '../header_section/header_widget.dart';
 
 class ContentPage extends StatelessWidget {
   final TalkOrEvent content;
@@ -21,18 +23,14 @@ class ContentPage extends StatelessWidget {
             color: Theme.of(context).cardColor,
             child: SingleChildScrollView(
               padding: const EdgeInsetsDirectional.only(
-                top: 42,
                 start: 20,
                 end: 20,
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  _ContentViewHeader(
-                    location: content.location,
-                    dateTime: content.dateTime,
-                    wasInPerson: content.inPerson,
-                  ),
+                  const HeaderWidget(),
+                  _ContentViewHeader(content: content),
                   const SizedBox(height: 32),
                   _ContentViewBody(description: content.description),
                   const SizedBox(height: kToolbarHeight),
@@ -48,55 +46,139 @@ class ContentPage extends StatelessWidget {
 
 class _ContentViewHeader extends StatelessWidget {
   const _ContentViewHeader({
-    required this.location,
-    required this.dateTime,
-    required this.wasInPerson,
+    required this.content,
   });
-
-  final String location;
-  final String dateTime;
-  final bool wasInPerson;
+  final TalkOrEvent content;
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Expanded(
-              child: SelectableText(
-                'OPAAAaaaaaaaaaaaaaaaaaaaaaaaaaaaaA',
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const SizedBox(height: 16),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              IconButton(
+                onPressed: () => Navigator.pop(context),
+                icon: const Icon(Icons.arrow_back_ios_new),
               ),
-            ),
-            IconButton(
-              key: const ValueKey('ContentExit'),
-              icon: const Icon(Icons.keyboard_arrow_down),
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              splashRadius: 20,
-            ),
-          ],
-        ),
-        const SizedBox(height: 16),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 18.0),
+                  child: SelectableText(
+                    content.title,
+                    style: TextStyle(
+                      color: AppColors.accent,
+                      fontSize:
+                          Theme.of(context).textTheme.headlineLarge?.fontSize ??
+                              40,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const Divider(),
+          const SizedBox(height: 16),
+          Padding(
+            padding: const EdgeInsets.only(left: 32.0),
+            child: Wrap(
+              spacing: 4.5,
+              runSpacing: 4.5,
               children: [
-                SelectableText(
-                    '$location | ${wasInPerson ? 'In Person' : 'Online'}'),
-                const SizedBox(height: 4),
-                SelectableText(dateTime),
+                for (var tag in content.tags ?? []) ...[
+                  Chip(
+                    label: Text(
+                      '#$tag',
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: AppColors.green,
+                      ),
+                    ),
+                  ),
+                ],
               ],
             ),
-          ],
-        ),
-      ],
+          ),
+          const SizedBox(height: 32),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 18.0),
+            child: SelectableText(
+              content.description,
+              style: TextStyle(
+                color: AppColors.white,
+                fontSize: Theme.of(context).textTheme.bodyLarge?.fontSize ?? 36,
+              ),
+            ),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  SelectableText(
+                      '${content.location} | ${content.inPerson ? 'In Person' : 'Online'}'),
+                  const SizedBox(height: 4),
+                  SelectableText(content.dateTime),
+                ],
+              ),
+            ],
+          ),
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        content.title,
+                        style: TextStyle(color: AppColors.accent),
+                      ),
+                    ),
+                    Chip(
+                      label: Text(
+                        content.inPerson ? 'In Person' : 'Online',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.green,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const Divider(),
+                Text(
+                  content.description,
+                  style: TextStyle(color: AppColors.white),
+                ),
+                const SizedBox(height: 12),
+                Row(
+                  children: [
+                    Text(
+                      content.location,
+                      style: TextStyle(color: AppColors.green),
+                    ),
+                    const SizedBox(width: 12),
+                    Icon(
+                      Icons.pin_drop,
+                      color: AppColors.green,
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 12),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

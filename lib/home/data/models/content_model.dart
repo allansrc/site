@@ -1,62 +1,47 @@
-class TalkContentModel {
+class TalkOrEvent {
   final String title;
+  final String host;
   final String description;
+  final String dateTime;
   final String location;
   final List<String>? tags;
+  final List<ContentLinkModel>? links;
   final bool inPerson;
 
-  TalkContentModel({
+  TalkOrEvent({
     required this.title,
+    required this.host,
     required this.description,
     required this.location,
     required this.tags,
+    required this.links,
     required this.inPerson,
+    required this.dateTime,
   });
 
-  factory TalkContentModel.fromJson(Map<String, dynamic> json) {
-    return TalkContentModel(
+  factory TalkOrEvent.fromJson(Map<String, dynamic> json) {
+    return TalkOrEvent(
       title: json['title'],
+      host: json['host'] ?? '',
       description: json['description'],
       location: json['location'],
       tags: json['tags'] != null
           ? (json['tags'] as List).map((e) => e.toString()).toList()
           : null,
-      inPerson: json['inperson'],
-    );
-  }
-}
-
-class EventContentModel {
-  final String title;
-  final String description;
-  final String location;
-  final List<String>? tags;
-  final bool inPerson;
-
-  EventContentModel({
-    required this.title,
-    required this.description,
-    required this.location,
-    required this.tags,
-    required this.inPerson,
-  });
-
-  factory EventContentModel.fromJson(Map<String, dynamic> json) {
-    return EventContentModel(
-      title: json['title'],
-      description: json['description'],
-      location: json['location'],
-      tags: json['tags'] != null
-          ? (json['tags'] as List).map((e) => e.toString()).toList()
+      links: json['links'] != null
+          ? (json['links'] as List)
+              .map((e) => ContentLinkModel.fromJson(e))
+              .toList()
           : null,
       inPerson: json['inperson'],
+      dateTime: json['dateTime'],
     );
   }
 }
 
 class ContentModel {
-  final List<TalkContentModel> talks;
-  final List<EventContentModel> events;
+  final List<TalkOrEvent> talks;
+  final List<TalkOrEvent> events;
 
   ContentModel({
     required this.talks,
@@ -71,13 +56,30 @@ class ContentModel {
     return ContentModel(
         talks: json['talks'] != null
             ? (json['talks'] as List)
-                .map((e) => TalkContentModel.fromJson(e))
+                .map((e) => TalkOrEvent.fromJson(e))
                 .toList()
             : [],
         events: json['events'] != null
             ? (json['events'] as List)
-                .map((e) => EventContentModel.fromJson(e))
+                .map((e) => TalkOrEvent.fromJson(e))
                 .toList()
             : []);
+  }
+}
+
+class ContentLinkModel {
+  final String label;
+  final String href;
+
+  ContentLinkModel({
+    required this.label,
+    required this.href,
+  });
+
+  factory ContentLinkModel.fromJson(Map<String, dynamic> json) {
+    return ContentLinkModel(
+      label: json['label'] ?? '',
+      href: json['href'] ?? '',
+    );
   }
 }

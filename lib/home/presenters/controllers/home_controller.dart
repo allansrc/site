@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import '../../data/mocks/contents.dart';
 
 class HomeController extends ChangeNotifier {
-  final talksList = <TalkContentModel>[];
-  final eventsList = <EventContentModel>[];
+  final talksList = <TalkOrEvent>[];
+  final eventsList = <TalkOrEvent>[];
   var contentValue = ContentModel.empty();
 
   void readContents() {

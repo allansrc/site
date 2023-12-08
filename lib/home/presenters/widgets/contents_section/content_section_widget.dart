@@ -23,26 +23,14 @@ class _ContentsSectionWidgetState extends State<ContentsSectionWidget> {
   @override
   Widget build(BuildContext context) {
     final talkList = [
-      for (var content in widget.contents.talks) ...{
-        ContentTileWidget(
-          title: content.title,
-          subTitle: content.description,
-          local: content.location,
-          wasInPerson: content.inPerson,
-          tagList: content.tags ?? [],
-        )
-      },
+      for (var content in widget.contents.talks) ...[
+        ContentTileWidget(content: content)
+      ],
     ];
     final eventList = [
-      for (var content in widget.contents.events) ...{
-        ContentTileWidget(
-          title: content.title,
-          subTitle: content.description,
-          local: content.location,
-          wasInPerson: content.inPerson,
-          tagList: content.tags ?? [],
-        ),
-      },
+      for (var content in widget.contents.events) ...[
+        ContentTileWidget(content: content)
+      ],
     ];
 
     return Padding(

@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../../shared/themes/colors.dart';
 
 class DescriptionWidget extends StatelessWidget {
-  const DescriptionWidget({super.key});
-
+  DescriptionWidget({super.key});
+  final opa = Uri();
   @override
   Widget build(BuildContext context) {
     return Padding(

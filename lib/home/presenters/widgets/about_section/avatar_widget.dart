@@ -1,9 +1,16 @@
 import 'package:allansrc/shared/themes/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AvatarWidget extends StatelessWidget {
-  const AvatarWidget({super.key});
+  AvatarWidget({super.key});
+
+  final youtubeURL = Uri.parse('https://www.youtube.com/@duckdevtv');
+  final twitterURL = Uri.parse('https://www.twitter.com/allansrc');
+  final mediumURL = Uri.parse('https://medium.com/@allansrc');
+  final githubURL = Uri.parse('https://github.com/allansrc');
+  final linkedinURL = Uri.parse('https://www.linkedin.com/in/allanrt');
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +39,9 @@ class AvatarWidget extends StatelessWidget {
               runSpacing: 5,
               children: [
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    launchUrl(linkedinURL);
+                  },
                   child: SizedBox(
                     height: 44,
                     width: 44,
@@ -47,7 +56,9 @@ class AvatarWidget extends StatelessWidget {
                   ),
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    launchUrl(mediumURL);
+                  },
                   child: SizedBox(
                     height: 44,
                     width: 44,
@@ -61,23 +72,25 @@ class AvatarWidget extends StatelessWidget {
                     ),
                   ),
                 ),
+                // InkWell(
+                //   onTap: () {},
+                //   child: SizedBox(
+                //     height: 44,
+                //     width: 44,
+                //     child: SvgPicture.asset(
+                //       'icons/social/svgs/meetup.svg',
+                //       colorFilter: ColorFilter.mode(
+                //         AppColors.white,
+                //         BlendMode.srcIn,
+                //       ),
+                //       semanticsLabel: 'meetup logo',
+                //     ),
+                //   ),
+                // ),
                 InkWell(
-                  onTap: () {},
-                  child: SizedBox(
-                    height: 44,
-                    width: 44,
-                    child: SvgPicture.asset(
-                      'icons/social/svgs/meetup.svg',
-                      colorFilter: ColorFilter.mode(
-                        AppColors.white,
-                        BlendMode.srcIn,
-                      ),
-                      semanticsLabel: 'meetup logo',
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    launchUrl(twitterURL);
+                  },
                   child: SizedBox(
                     height: 44,
                     width: 44,
@@ -92,7 +105,9 @@ class AvatarWidget extends StatelessWidget {
                   ),
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    launchUrl(youtubeURL);
+                  },
                   child: SizedBox(
                     height: 44,
                     width: 44,

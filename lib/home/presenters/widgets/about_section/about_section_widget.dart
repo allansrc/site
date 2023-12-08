@@ -10,7 +10,7 @@ class AboutSectionWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        const children = [
+        final children = [
           AvatarWidget(),
           DescriptionWidget(),
         ];

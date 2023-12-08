@@ -32,13 +32,13 @@ class _ContentsSectionWidgetState extends State<ContentsSectionWidget> {
               children: [
                 GestureDetector(
                   onTap: () {
-                    setState(() {
-                      isTalkSelected = !isTalkSelected;
-                    });
+                    // setState(() {
+                    //   isTalkSelected = !isTalkSelected;
+                    // });
                   },
                   child: Chip(
                     label: Text(
-                      'Talks',
+                      'Talks ' '${widget.contents.talks.length}',
                       style: TextStyle(
                         color:
                             isTalkSelected ? AppColors.accent : AppColors.white,
@@ -49,13 +49,13 @@ class _ContentsSectionWidgetState extends State<ContentsSectionWidget> {
                 const SizedBox(width: 24),
                 GestureDetector(
                   onTap: () {
-                    setState(() {
-                      isEventSelected = !isEventSelected;
-                    });
+                    // setState(() {
+                    //   isEventSelected = !isEventSelected;
+                    // });
                   },
                   child: Chip(
                     label: Text(
-                      'Events',
+                      'Events ' '${widget.contents.events.length}',
                       style: TextStyle(
                         color: isEventSelected
                             ? AppColors.accent

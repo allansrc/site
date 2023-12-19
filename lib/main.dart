@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       },
       child: MaterialApp(
         title: 'Duckdev ATO Software',
-        theme: MainTheme.theme,
+        theme: MainThemeData.darkThemeData,
         home: const MyHomePage(),
       ),
     );

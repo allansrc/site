@@ -72,21 +72,23 @@ class AvatarWidget extends StatelessWidget {
                     ),
                   ),
                 ),
-                // InkWell(
-                //   onTap: () {},
-                //   child: SizedBox(
-                //     height: 44,
-                //     width: 44,
-                //     child: SvgPicture.asset(
-                //       'icons/social/svgs/meetup.svg',
-                //       colorFilter: ColorFilter.mode(
-                //         AppColors.white,
-                //         BlendMode.srcIn,
-                //       ),
-                //       semanticsLabel: 'meetup logo',
-                //     ),
-                //   ),
-                // ),
+                InkWell(
+                  onTap: () {
+                    launchUrl(githubURL);
+                  },
+                  child: SizedBox(
+                    height: 44,
+                    width: 44,
+                    child: SvgPicture.asset(
+                      'icons/social/svgs/github.svg',
+                      colorFilter: ColorFilter.mode(
+                        AppColors.white,
+                        BlendMode.srcIn,
+                      ),
+                      semanticsLabel: 'github logo',
+                    ),
+                  ),
+                ),
                 InkWell(
                   onTap: () {
                     launchUrl(twitterURL);
@@ -129,6 +131,5 @@ class AvatarWidget extends StatelessWidget {
     );
   }
 }
-
 
 // <a target="_blank" href="https://icons8.com/icon/85433/youtube-logo">YouTube</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>

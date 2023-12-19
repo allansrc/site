@@ -118,10 +118,10 @@ class _ContentTileWidgetState extends State<ContentTileWidget> {
     });
   }
 
-  String _subtitleHandle(String subTitle, [bool hovered = false]) {
-    if (subTitle.length > 100) {
-      return '${subTitle.substring(0, 92)}...';
-    }
-    return subTitle;
-  }
+  // String _subtitleHandle(String subTitle, [bool hovered = false]) {
+  //   if (subTitle.length > 100) {
+  //     return '${subTitle.substring(0, 92)}...';
+  //   }
+  //   return subTitle;
+  // }
 }

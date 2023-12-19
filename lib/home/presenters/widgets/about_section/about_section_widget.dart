@@ -22,12 +22,7 @@ class AboutSectionWidget extends StatelessWidget {
               if (AppSizes.hasWebMinSize(context)) ...{
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    // Lets go refact this, for first step
-                    for (var widget in children) ...{
-                      Flexible(child: widget),
-                    }
-                  ],
+                  children: children.map((widget) =>  Flexible(child: widget)).toList()
                 ),
               } else ...{
                 ...children,

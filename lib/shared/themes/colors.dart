@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
+  static Color get icon => const Color(0xffcbd5e1);
+  static Color get fontPrimary => const Color(0xfff1f5f9);
+  static Color get fontSecondary => const Color(0xff6f7a8a);
   static MaterialColor get brown => const MaterialColor(0xFFA45A2A, {
         50: Color.fromRGBO(164, 90, 42, .1),
         100: Color.fromRGBO(164, 90, 42, .2),

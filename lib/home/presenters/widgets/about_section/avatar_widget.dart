@@ -10,6 +10,7 @@ class AvatarWidget extends StatelessWidget {
   final twitterURL = Uri.parse('https://www.twitter.com/allansrc');
   final mediumURL = Uri.parse('https://medium.com/@allansrc');
   final githubURL = Uri.parse('https://github.com/allansrc');
+  final instagramURL = Uri.parse('https://instagram.com/allansrc');
   final linkedinURL = Uri.parse('https://www.linkedin.com/in/allanrt');
 
   @override
@@ -35,67 +36,16 @@ class AvatarWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Wrap(
-              spacing: 5,
+              spacing: 25,
               runSpacing: 5,
               children: [
-                InkWell(
-                  onTap: () {
-                    launchUrl(linkedinURL);
-                  },
-                  child: SizedBox(
-                    height: 44,
-                    width: 44,
-                    child: SvgPicture.asset(
-                      'icons/social/svgs/linkedin.svg',
-                      colorFilter: ColorFilter.mode(
-                        AppColors.white,
-                        BlendMode.srcIn,
-                      ),
-                      semanticsLabel: 'linkedin logo',
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    launchUrl(mediumURL);
-                  },
-                  child: SizedBox(
-                    height: 44,
-                    width: 44,
-                    child: SvgPicture.asset(
-                      'icons/social/svgs/medium.svg',
-                      colorFilter: ColorFilter.mode(
-                        AppColors.white,
-                        BlendMode.srcIn,
-                      ),
-                      semanticsLabel: 'medium logo',
-                    ),
-                  ),
-                ),
-                InkWell(
-                  onTap: () {
-                    launchUrl(githubURL);
-                  },
-                  child: SizedBox(
-                    height: 44,
-                    width: 44,
-                    child: SvgPicture.asset(
-                      'icons/social/svgs/github.svg',
-                      colorFilter: ColorFilter.mode(
-                        AppColors.white,
-                        BlendMode.srcIn,
-                      ),
-                      semanticsLabel: 'github logo',
-                    ),
-                  ),
-                ),
                 InkWell(
                   onTap: () {
                     launchUrl(twitterURL);
                   },
                   child: SizedBox(
-                    height: 44,
-                    width: 44,
+                    height: 24,
+                    width: 24,
                     child: SvgPicture.asset(
                       'icons/social/svgs/x.svg',
                       colorFilter: ColorFilter.mode(
@@ -108,11 +58,79 @@ class AvatarWidget extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
+                    launchUrl(instagramURL);
+                  },
+                  child: SizedBox(
+                    height: 24,
+                    width: 24,
+                    child: SvgPicture.asset(
+                      'icons/social/svgs/instagram.svg',
+                      colorFilter: ColorFilter.mode(
+                        AppColors.white,
+                        BlendMode.srcIn,
+                      ),
+                      semanticsLabel: 'instagram logo',
+                    ),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {
+                    launchUrl(githubURL);
+                  },
+                  child: SizedBox(
+                    height: 24,
+                    width: 24,
+                    child: SvgPicture.asset(
+                      'icons/social/svgs/github.svg',
+                      colorFilter: ColorFilter.mode(
+                        AppColors.white,
+                        BlendMode.srcIn,
+                      ),
+                      semanticsLabel: 'github logo',
+                    ),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {
+                    launchUrl(mediumURL);
+                  },
+                  child: SizedBox(
+                    height: 24,
+                    width: 24,
+                    child: SvgPicture.asset(
+                      'icons/social/svgs/medium.svg',
+                      colorFilter: ColorFilter.mode(
+                        AppColors.white,
+                        BlendMode.srcIn,
+                      ),
+                      semanticsLabel: 'medium logo',
+                    ),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {
+                    launchUrl(linkedinURL);
+                  },
+                  child: SizedBox(
+                    height: 24,
+                    width: 24,
+                    child: SvgPicture.asset(
+                      'icons/social/svgs/linkedin.svg',
+                      colorFilter: ColorFilter.mode(
+                        AppColors.white,
+                        BlendMode.srcIn,
+                      ),
+                      semanticsLabel: 'linkedin logo',
+                    ),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {
                     launchUrl(youtubeURL);
                   },
                   child: SizedBox(
-                    height: 44,
-                    width: 44,
+                    height: 24,
+                    width: 24,
                     child: SvgPicture.asset(
                       'icons/social/svgs/youtube.svg',
                       colorFilter: ColorFilter.mode(

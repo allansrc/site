@@ -29,7 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: ListView(
               children: [
                 const HeaderWidget(),
-                // const NavigationBarWidget(),
+                const NavigationBarWidget(),
                 const Divider(),
                 const AboutSectionWidget(),
                 const Divider(),

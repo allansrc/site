@@ -13,7 +13,7 @@ class MainThemeData {
   static final Color _darkFocusColor = Colors.white.withOpacity(0.12);
 
   static ThemeData lightThemeData =
-  themeData(lightColorScheme, _lightFocusColor);
+      themeData(lightColorScheme, _lightFocusColor);
   static ThemeData darkThemeData = themeData(darkColorScheme, _darkFocusColor);
 
   static ThemeData themeData(ColorScheme colorScheme, Color focusColor) {
@@ -58,12 +58,12 @@ class MainThemeData {
   );
 
   static const ColorScheme darkColorScheme = ColorScheme(
-    primary: Color(0xFFFF8383),
+    primary: Color(0xFF0F172A),
     primaryContainer: Color(0xFF1CDEC9),
     secondary: Color(0xFF4D1F7C),
     secondaryContainer: Color(0xFF451B6F),
-    background: Color(0xFF241E30),
-    surface: Color(0xFF1F1929),
+    background: Color(0xFF000000),
+    surface: Color(0xFF0f172a),
     onBackground: Color(0x0DFFFFFF), // White with 0.05 opacity
     error: _darkFillColor,
     onError: _darkFillColor,

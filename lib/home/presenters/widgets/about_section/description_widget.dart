@@ -18,16 +18,16 @@ class DescriptionWidget extends StatelessWidget {
             'Software Consultant',
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              color: AppColors.accent,
-              fontSize: 18.0,
+              color: AppColors.fontPrimary,
+              fontSize: 24.0,
             ),
           ),
           Text(
-            'Software Engineer SR.',
+            'SR. Software Engineer',
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              color: AppColors.accent,
-              fontSize: 18.0,
+              color: AppColors.fontPrimary,
+              fontSize: 24.0,
             ),
           ),
           const SizedBox(height: 16),
@@ -39,8 +39,8 @@ class DescriptionWidget extends StatelessWidget {
                 label: Text(
                   'Flutter',
                   style: TextStyle(
-                    fontWeight: FontWeight.normal,
-                    color: AppColors.green,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.fontSecondary,
                   ),
                 ),
               ),
@@ -48,8 +48,8 @@ class DescriptionWidget extends StatelessWidget {
                 label: Text(
                   'Dart',
                   style: TextStyle(
-                    fontWeight: FontWeight.normal,
-                    color: AppColors.green,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.fontSecondary,
                   ),
                 ),
               ),
@@ -57,17 +57,8 @@ class DescriptionWidget extends StatelessWidget {
                 label: Text(
                   'Opensource',
                   style: TextStyle(
-                    fontWeight: FontWeight.normal,
-                    color: AppColors.green,
-                  ),
-                ),
-              ),
-              Chip(
-                label: Text(
-                  'Opensource',
-                  style: TextStyle(
-                    fontWeight: FontWeight.normal,
-                    color: AppColors.green,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.fontSecondary,
                   ),
                 ),
               ),

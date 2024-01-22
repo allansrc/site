@@ -30,7 +30,7 @@ class _ContentTileWidgetState extends State<ContentTileWidget> {
           onExit: (_) => _handleHover(false),
           child: Card(
             elevation: 5,
-            shadowColor: isHovered ? AppColors.accent : null,
+            shadowColor: isHovered ? AppColors.fontSecondary : null,
             child: Container(
               constraints: const BoxConstraints(
                 maxWidth: 500,
@@ -46,15 +46,18 @@ class _ContentTileWidgetState extends State<ContentTileWidget> {
                         Expanded(
                           child: Text(
                             content.title,
-                            style: TextStyle(color: AppColors.accent),
+                            style: TextStyle(
+                              color: AppColors.fontPrimary,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                         Chip(
                           label: Text(
                             content.inPerson ? 'In Person' : 'Online',
-                            style: TextStyle(
+                            style: const TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: AppColors.green,
+                              // color: AppColors.accent,
                             ),
                           ),
                         ),
@@ -63,19 +66,19 @@ class _ContentTileWidgetState extends State<ContentTileWidget> {
                     const Divider(),
                     Text(
                       content.description,
-                      style: TextStyle(color: AppColors.white),
+                      style: TextStyle(color: AppColors.fontSecondary),
                     ),
                     const SizedBox(height: 12),
                     Row(
                       children: [
                         Text(
                           content.location,
-                          style: TextStyle(color: AppColors.green),
+                          style: TextStyle(color: AppColors.fontSecondary),
                         ),
                         const SizedBox(width: 12),
                         Icon(
                           Icons.pin_drop,
-                          color: AppColors.green,
+                          color: AppColors.icon,
                         ),
                       ],
                     ),
@@ -90,7 +93,7 @@ class _ContentTileWidgetState extends State<ContentTileWidget> {
                               '#$tag',
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
-                                color: AppColors.green,
+                                color: AppColors.fontSecondary,
                               ),
                             ),
                           ),

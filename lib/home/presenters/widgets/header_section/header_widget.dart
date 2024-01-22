@@ -14,7 +14,7 @@ class HeaderWidget extends StatelessWidget {
             'Allan',
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              color: AppColors.accent,
+              color: AppColors.fontPrimary,
               fontSize: 24.0,
             ),
           ),
@@ -22,7 +22,7 @@ class HeaderWidget extends StatelessWidget {
             'Ramos',
             style: TextStyle(
               fontWeight: FontWeight.bold,
-              color: AppColors.white,
+              color: AppColors.fontSecondary,
               fontSize: 24.0,
             ),
           ),

@@ -130,53 +130,6 @@ class _ContentViewHeader extends StatelessWidget {
               ),
             ],
           ),
-          Padding(
-            padding: const EdgeInsets.all(12.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    Expanded(
-                      child: Text(
-                        content.title,
-                        style: TextStyle(color: AppColors.accent),
-                      ),
-                    ),
-                    Chip(
-                      label: Text(
-                        content.inPerson ? 'In Person' : 'Online',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          color: AppColors.green,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-                const Divider(),
-                Text(
-                  content.description,
-                  style: TextStyle(color: AppColors.white),
-                ),
-                const SizedBox(height: 12),
-                Row(
-                  children: [
-                    Text(
-                      content.location,
-                      style: TextStyle(color: AppColors.green),
-                    ),
-                    const SizedBox(width: 12),
-                    Icon(
-                      Icons.pin_drop,
-                      color: AppColors.green,
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 12),
-              ],
-            ),
-          ),
         ],
       ),
     );

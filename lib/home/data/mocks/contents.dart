@@ -14,6 +14,18 @@ class ContentData {
         ]
       },
       {
+        "title": "AI and LLM technologies in Flutter",
+        "description": "Panel discussion on the use of AI and LLM in Flutter",
+        "location": "Global",
+        "host": "Flutter Global Summit 2024",
+        "dateTime": "28/02/2024",
+        "inperson": false,
+        "tags": ["flutter", "LLM", "AI"],
+        "links": [
+          {"label": "event", "href": "https://events.geekle.us/flutter24/"}
+        ]
+      },
+      {
         "title": "Flutter em apps Nativos",
         "description": "Como NÃO criar o monstro perfeito",
         "location": "Brazil",

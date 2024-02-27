@@ -31,7 +31,10 @@ flutter:
     - assets/icons/social/svgs/
     - assets/jsons/
     # - images/a_dot_ham.jpeg
-
+  fonts:
+    - family:  MyFlutterApp
+      fonts:
+        - asset: assets/fonts/MyFlutterApp.ttf
   # fonts:
   #   - family: Schyler
   #     fonts:

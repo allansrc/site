@@ -6,12 +6,22 @@ class ContentData {
         "description": "steps to avoid creating the Perfect Monster",
         "location": "Global",
         "host": "Flutter Global Summit 2024",
-        "dateTime": "27/02/2024",
+        "dateTime": "28/02/2024",
         "inperson": true,
         "tags": ["flutter", "add-to-app", "native", "architecture"],
         "links": [
           {"label": "event", "href": "https://events.geekle.us/flutter24/"}
         ]
+      },
+      {
+        "title": "Flutter em apps Nativos",
+        "description": "Como NÃO criar o monstro perfeito",
+        "location": "Brazil",
+        "host": "Tech Talk - Serasa Acontece",
+        "dateTime": "23/12/2023",
+        "inperson": true,
+        "tags": ["flutter", "add-to-app", "native", "architecture"],
+        "links": []
       },
       {
         "title": "Flutter em apps Nativos",

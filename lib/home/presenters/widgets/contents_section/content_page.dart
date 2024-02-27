@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../../shared/themes/colors.dart';
 import '../../../data/models/content_model.dart';
@@ -30,9 +31,7 @@ class ContentPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const HeaderWidget(),
-                  _ContentViewHeader(content: content),
-                  const SizedBox(height: 32),
-                  _ContentViewBody(description: content.description),
+                  _ContentView(content: content),
                   const SizedBox(height: kToolbarHeight),
                 ],
               ),
@@ -44,8 +43,8 @@ class ContentPage extends StatelessWidget {
   }
 }
 
-class _ContentViewHeader extends StatelessWidget {
-  const _ContentViewHeader({
+class _ContentView extends StatelessWidget {
+  const _ContentView({
     required this.content,
   });
   final TalkOrEvent content;
@@ -53,7 +52,7 @@ class _ContentViewHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+      padding: const EdgeInsets.symmetric(horizontal: 18.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -83,6 +82,8 @@ class _ContentViewHeader extends StatelessWidget {
           ),
           const Divider(),
           const SizedBox(height: 16),
+
+          // TAGS
           Padding(
             padding: const EdgeInsets.only(left: 32.0),
             child: Wrap(
@@ -104,48 +105,61 @@ class _ContentViewHeader extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 32),
+
+          // Info
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 18.0),
-            child: SelectableText(
-              content.description,
-              style: TextStyle(
-                color: AppColors.white,
-                fontSize: Theme.of(context).textTheme.bodyLarge?.fontSize ?? 36,
-              ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    SelectableText(
+                        'Location: ${content.location} | ${content.inPerson ? 'In Person' : 'Online'}'),
+                    const SizedBox(height: 4),
+                    SelectableText('Event date: ${content.dateTime}'),
+                    const SizedBox(height: 4),
+                    SelectableText('Host: ${content.host}'),
+                    const SizedBox(height: 8),
+                    SelectableText(
+                      'Event Description: ${content.description}',
+                      style: Theme.of(context)
+                          .textTheme
+                          .bodyMedium!
+                          .copyWith(fontSize: 16),
+                    ),
+                    if (content.links != null) ...{
+                      const SizedBox(height: 12),
+                      const SelectableText('Event links: '),
+                      const SizedBox(height: 4),
+                      for (var link in content.links!) ...[
+                        Row(children: [
+                          SelectableText('${link.label.toUpperCase()}: '),
+                          InkWell(
+                            onTap: () {
+                              launchUrl(Uri.parse(link.href));
+                            },
+                            child: Text(
+                              link.href,
+                              style: TextStyle(
+                                color: AppColors.accent,
+                                decoration: TextDecoration.underline,
+                              ),
+                            ),
+                          ),
+                        ]),
+                      ],
+                    },
+                  ],
+                ),
+              ],
             ),
-          ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.min,
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  SelectableText(
-                      '${content.location} | ${content.inPerson ? 'In Person' : 'Online'}'),
-                  const SizedBox(height: 4),
-                  SelectableText(content.dateTime),
-                ],
-              ),
-            ],
           ),
         ],
       ),
-    );
-  }
-}
-
-class _ContentViewBody extends StatelessWidget {
-  const _ContentViewBody({required this.description});
-
-  final String description;
-
-  @override
-  Widget build(BuildContext context) {
-    return SelectableText(
-      description,
-      style: Theme.of(context).textTheme.bodyMedium!.copyWith(fontSize: 16),
     );
   }
 }

@@ -11,7 +11,20 @@ class AboutSectionWidget extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         final children = [
-          AvatarWidget(),
+          Container(
+            height: 256,
+            width: 256,
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                image: NetworkImage(
+                  'https://avatars.githubusercontent.com/u/35867294?v=4',
+                ),
+              ),
+              borderRadius: BorderRadius.all(
+                Radius.circular(12),
+              ),
+            ),
+          ),
           DescriptionWidget(),
         ];
         return Container(
@@ -21,9 +34,10 @@ class AboutSectionWidget extends StatelessWidget {
             children: [
               if (AppSizes.hasWebMinSize(context)) ...{
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: children.map((widget) =>  Flexible(child: widget)).toList()
-                ),
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: children
+                        .map((widget) => Flexible(child: widget))
+                        .toList()),
               } else ...{
                 ...children,
               },

@@ -43,7 +43,7 @@ class _ContentsSectionWidgetState extends State<ContentsSectionWidget> {
             children: [
               Chip(
                 label: Text(
-                  'Talks ' '${widget.contents.talks.length}',
+                  '${widget.contents.talks.length} ' 'Talks',
                   style: TextStyle(
                     color: isTalkSelected ? AppColors.accent : AppColors.white,
                   ),
@@ -52,7 +52,7 @@ class _ContentsSectionWidgetState extends State<ContentsSectionWidget> {
               const SizedBox(width: 24),
               Chip(
                 label: Text(
-                  'Events ' '${widget.contents.events.length}',
+                  '${widget.contents.events.length} ' 'Events',
                   style: TextStyle(
                     color: isEventSelected ? AppColors.accent : AppColors.white,
                   ),
